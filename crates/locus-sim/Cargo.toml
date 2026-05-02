@@ -1,0 +1,15 @@
+[package]
+name = "locus-sim"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+description = "Simulation engine for Locus"
+
+[dependencies]
+locus-core = { path = "../locus-core", version = "0.0.1" }
+locus-num = { path = "../locus-num", version = "0.0.1" }
+petgraph.workspace = true
+thiserror.workspace = true

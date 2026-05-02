@@ -1,0 +1,17 @@
+[package]
+name = "locus-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+description = "Command-line entry point for Locus"
+
+[[bin]]
+name = "locus"
+path = "src/main.rs"
+
+[dependencies]
+locus-core = { path = "../locus-core", version = "0.0.1" }
+locus-num = { path = "../locus-num", version = "0.0.1" }
