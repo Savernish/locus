@@ -25,7 +25,6 @@ impl TransferFunction {
     }
 
     /// Convenience: build from raw coefficient vectors in descending order.
-    /// TODO: fix this part.
     pub fn from_coeffs(num: Vec<f64>, den: Vec<f64>) -> Result<Self, CoreError> {
         Self::new(Polynomial::new(num)?, Polynomial::new(den)?)
     }
